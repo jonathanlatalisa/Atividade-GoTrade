@@ -1,0 +1,127 @@
+:root {
+    background-color: black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: 00002e;
+    color: #ccc;
+}
+
+header.topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+header.topo figure img {
+    width: 200px;
+    height: 50px;
+}
+
+header h2 {
+    color: white;
+    font-weight: 200;
+    font-size: 60px;
+    margin: 0;
+}
+
+section header h2 {
+    text-align: center;
+}
+
+header>figure>img {
+    height: 30px;
+}
+
+header figure figcaption {
+    display: none;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+footer button {
+    color: 00002e;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px 40px;
+    font-size: 30px;
+    border: 2px solid white;
+}
+
+button:hover {
+    color: #ffffff;
+}
+
+.pg-home {
+    margin: auto;
+    padding: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 858px;
+    justify-content: space-between;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section>ul figure img {
+    border: 1px solid transparent;
+    width: 186px;
+    box-sizing: border-box;
+}
+
+li figure figcaption {
+    display: none;
+}
+
+li h3 {
+    color: white;
+    margin-top: 20px;
+}
+
+ul li img:hover {
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+li:hover .nome {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 785px) {
+    ul {
+        width: 400px;
+    }
+    header.topo {
+        justify-content: center;
+    }
+    section header h2 {
+        font-size: 35px;
+        /* padding-top: 50px;
+			margin-bottom: 20px; */
+    }
+    section {
+        height: fit-content;
+    }
+}

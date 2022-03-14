@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="assets/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">series</a></li>
+            <li><a href="#">filmes</a></li>
+            <li><a href="#">adicionar filme</a></li>
+
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="assets/harry.jpg" class="bg">
+
+        <div class="content">
+            <h4>
+                <span>2001</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Ação</span>
+            </h4>
+            <p>
+                Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente, Harry é impedido de ler a carta por
+                seu tio, mas logo recebe a visita de Hagrid, o guarda-caça de Hogwarts, que chega para levá-lo até a escola. Harry adentra um mundo mágico que jamais imaginara, vivendo diversas aventuras com seus novos amigos, Rony Weasley e Hermione
+                Granger.
+            </p>
+
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Minha lista </a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="assets/play.png">Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="assets/Harry-potter.mp4" controls="true"></video>
+        <img src="assets/close.png" class="close" onclick="toggleVideo()">
+    </div>
+
+
+</body>
+<main>
+    <section class="thumbSection">
+        <h2 class="thumbTitle">Harry Potter / Filmes
+        </h2>
+        <div class="thumbTiles swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+
+
+                    <img class="thumbTile__image" src="assets/harry-pedra-f.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="assets/harry-pedra.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="assets/harry-prisioneiro.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="assets/calice de foto.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="assets/reliquias.jpg">
+                    </a>
+                </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+
+
+</html>
